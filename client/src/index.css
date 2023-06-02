@@ -1,0 +1,33 @@
+:root {
+	--primary: #97f128;
+	--secondary: #1beded;
+	--light: #EEE;
+	--light-alt: #61759b;
+	--dark: #131A26;
+	--dark-alt: #202B3E;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--dark-alt);
+	color: var(--light);
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+h2 {
+	font-size: 18px;
+	color: var(--light-alt);
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
