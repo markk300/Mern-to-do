@@ -49,5 +49,13 @@ app.get("/todo/complete/:id", async (req, res) => {
   todo.save();
   res.json(todo);
 });
+app.put("/todos/updated/:id", async (req, res) => {
+  try {
+    const updatetodo = await Todo.findByIdAndUpdate(req.params.id, { $set: req.body });
+    res.status(200).json("updated");
+  } catch (err) {
+    res.json(res);
+  }
+});
 
 app.listen(3001, () => console.log("server started on port 3001"));

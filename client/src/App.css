@@ -136,3 +136,14 @@
 	text-align: center;
 	cursor: pointer;
 }
+.todo .update-todo{
+  background-color: rgb(191, 218, 16);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+  padding: 3px;
+  border-radius: 5px;
+  
+}
+
